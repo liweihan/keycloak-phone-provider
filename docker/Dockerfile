@@ -43,9 +43,9 @@ COPY modules/keycloak-sms-provider-aliyun/main/keycloak-sms-provider-aliyun.jar 
 
 COPY module-add.cli cli/
 RUN $JBOSS_HOME/bin/jboss-cli.sh --file=cli/module-add.cli
-RUN rm -rf $JBOSS_HOME/standalone/configuration/standalone_xml_history/current
+# RUN rm -rf $JBOSS_HOME/standalone/configuration/standalone_xml_history/current
 
-#COPY standalone/deployments/keycloak-phone-provider.resources.jar $JBOSS_HOME/standalone/deployments/
+# COPY standalone/deployments/keycloak-phone-provider.resources.jar $JBOSS_HOME/standalone/deployments/
 
 
 
