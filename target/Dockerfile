@@ -45,7 +45,7 @@ COPY module-add.cli cli/
 RUN $JBOSS_HOME/bin/jboss-cli.sh --file=cli/module-add.cli
 RUN rm -rf $JBOSS_HOME/standalone/configuration/standalone_xml_history/current
 
-COPY standalone/deployments/keycloak-phone-provider.resources.jar $JBOSS_HOME/standalone/deployments/
+# COPY standalone/deployments/keycloak-phone-provider.resources.jar $JBOSS_HOME/standalone/deployments/
 
 ENTRYPOINT [ "/opt/jboss/tools/docker-entrypoint.sh" ]
 
